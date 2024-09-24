@@ -1,0 +1,155 @@
+
+.user-Settings {
+    padding: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f8f9fa;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-Settings h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  
+  .UserInformation {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .UserInformation div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  
+  .UserInformation label {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #555;
+  }
+  
+  
+  .user-Name, .user-Email, .user-Address {
+    font-size: 1rem;
+    padding: 0.5rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    color: #333;
+  }
+  
+  
+  .Useraddress {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    color: #333;
+    resize: none;
+  }
+  
+  
+  .Update-btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .Update-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 576px) {
+    .user-Settings {
+      padding: 1rem;
+      max-width: 100%;
+      margin: 0 1rem;
+    }
+  
+    .UserInformation div {
+      margin-bottom: 0.5rem;
+    }
+  
+    .Useraddress, .user-Name, .user-Email, .user-Address {
+      font-size: 0.875rem;
+    }
+  
+    .Update-btn {
+      width: 100%;
+      font-size: 0.875rem;
+      padding: 0.75rem;
+    }
+  }
+  
+  
+  @media (min-width: 577px) and (max-width: 992px) {
+    .user-Settings {
+      padding: 1.5rem;
+      max-width: 80%;
+    }
+  
+    .user-Settings h1 {
+      font-size: 1.75rem;
+    }
+  
+    .UserInformation div {
+      margin-bottom: 1rem;
+    }
+  
+    .Useraddress, .user-Name, .user-Email, .user-Address {
+      font-size: 0.9rem;
+    }
+  
+    .Update-btn {
+      font-size: 1rem;
+      padding: 0.75rem 1.25rem;
+    }
+  }
+  
+  
+  @media (min-width: 993px) {
+    .user-Settings {
+      padding: 2rem;
+      max-width: 600px;
+    }
+  
+    .user-Settings h1 {
+      font-size: 2rem;
+    }
+  
+    .Useraddress, .user-Name, .user-Email, .user-Address {
+      font-size: 1rem;
+    }
+  
+    .Update-btn {
+      font-size: 1rem;
+      padding: 0.75rem 1.5rem;
+    }
+  }
+  .flash-message {
+    padding: 0.75rem;
+    margin: 1rem 0;
+    color: #fff;
+    background-color: #28a745; 
+    border-radius: 0.25rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .flash-message.error {
+    background-color: #dc3545; 
+  }  

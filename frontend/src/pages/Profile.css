@@ -1,0 +1,62 @@
+
+ body {
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.Container {
+  background-color: #18181b; 
+  padding: 2rem 0.5rem 4rem; 
+  display: flex; 
+  flex-direction: column; 
+  height: 100%; 
+  gap: 1rem;
+  color: #ffffff;
+  box-sizing: border-box; 
+}
+
+@media screen and (min-width: 768px) {
+  .Container {
+      flex-direction: row; 
+      padding: 2rem 3rem 4rem;
+  }
+}
+
+.Sidebar {
+  width: 100%; 
+  height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .Sidebar {
+      width: 20%;
+     
+  }
+}
+@media screen and (min-width: 1024px) {
+  .sidebar {
+    height: 100vh; 
+  }
+}
+
+.Outlet {
+  max-width: 100%;
+  margin: 1.5rem;
+  box-sizing: border-box; 
+}
+
+@media screen and (min-width: 768px) {
+  .Outlet {
+      width: calc(100% - 20% - 3rem); 
+  }
+}
+
+.Loader {
+  width: 100vw; 
+  height: 100vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box; 
+}

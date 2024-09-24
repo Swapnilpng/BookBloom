@@ -1,0 +1,212 @@
+
+.loaderOrder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.ordersContainer {
+  margin: 20px auto;
+  width: 80%;
+  background-color: silver;
+  border-radius: 16px;
+}
+
+
+.ordersTitle {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.ordersTitle h1 {
+  font-size: 2rem;
+  color: #103783; 
+}
+
+.ordersHeader {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 3fr 1fr 1fr 0.5fr;
+  background-color: #f0f0f0;
+  padding: 10px;
+  font-weight: bold;
+  border-bottom: 2px solid #ddd;
+}
+
+.headerItem-Sr,
+.headerItem-book,
+.headerItem-desc,
+.headerItem-price,
+.headerItem-status,
+.headerItem.userIcon {
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+}
+
+.orderRow {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 3fr 1fr 1fr 0.5fr;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  align-items: center;
+  position: relative;
+  background-color: #f9f9f9;
+}
+
+.orderRow:hover {
+  background-color: #f1f1f1;
+}
+
+.orderItem {
+  font-size: 1rem;
+  color: #444;
+  text-align: center;
+}
+
+.orderBookTitle {
+  font-size: 1.1rem;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.orderBookTitle:hover {
+  text-decoration: underline;
+}
+
+.orderDescription {
+  font-size: 0.95rem;
+  color: #313030;
+  text-align: center;
+}
+
+.orderPrice {
+  font-size: 1rem;
+  color: #333;
+  text-align: center;
+}
+
+.orderStatus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.statusButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  border-radius: 4px;
+}
+
+.statusButton:hover {
+  background-color: #0056b3;
+}
+
+.statusOptions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+}
+
+.statusSelect {
+  margin-right: 10px;
+  padding: 5px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.updateStatusButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: green;
+}
+
+.userIconButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #007bff;
+}
+
+.userIconButton:hover {
+  color: #0056b3;
+}
+
+
+@media screen and (min-width: 1200px) {
+  .ordersContainer {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+  .ordersContainer {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ordersHeader,
+  .orderRow {
+    grid-template-columns: 1fr 2fr 3fr 1.5fr 1.5fr 1fr;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .ordersHeader,
+  .orderRow {
+    grid-template-columns: 1fr 1.5fr 2fr 1.5fr;
+  }
+
+  .headerItem.userIcon {
+    display: none;
+  }
+
+  .orderStatus {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .orderPrice {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .ordersHeader,
+  .orderRow {
+    grid-template-columns: 1fr 1.5fr 2fr;
+  }
+
+  .ordersContainer {
+    width: 100%;
+  }
+
+  .orderDescription {
+    font-size: 0.85rem;
+  }
+
+  .orderPrice {
+    font-size: 0.85rem;
+  }
+}
+

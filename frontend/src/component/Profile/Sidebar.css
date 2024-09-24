@@ -1,0 +1,249 @@
+
+.sidebar {
+  background-color: #27272a;
+  padding: 1rem;
+  width: 90%;
+  height: 100%;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.sidebar-profile {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+}
+
+.username {
+  margin-top: 0.75rem;
+  font-size: 1.5rem;
+  color: #f4f4f5;
+  font-weight: 600;
+  text-align: center;
+  margin-right: 1rem;
+}
+
+.email {
+  margin-top: 0.25rem;
+  font-weight: 400;
+  color: #d4d4d8;
+  font-size: 1rem;
+  margin-right: 5rem;
+}
+
+.divider {
+  width: 100%;
+  height: 2px;
+  background-color: #d4d4d8;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 0.5rem;
+}
+
+.user-sidebar-link, .admin-sidebar-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border-radius: 0.25rem;
+  background-color: #27272a;
+  overflow: auto;
+}
+
+.favourites, .order-history, .settings,
+.add-book, .all-orders {
+  color: #d4d4d8;
+  font-weight: 600;
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-top: 1rem;
+  text-align: center;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.favourites:hover, .order-history:hover, .settings:hover,
+.add-book:hover, .all-orders:hover {
+  background-color: #33448d;
+}
+
+.log-out {
+  background-color: #18181b;
+  width: 100%;
+  color: #ffffff;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 0.25rem;
+  transition: all 300ms;
+  margin-top: auto;
+}
+
+.log-out:hover {
+  background-color: #ffffff;
+  color: #18181b;
+}
+
+.logout-icon {
+  margin-left: 0.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .sidebar {
+    width: 80vw;
+    margin-left: 1.5rem;
+    height: auto;
+    padding: 0.5rem;
+    box-sizing: border-box;
+  }
+
+  .sidebar-profile img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .username {
+    font-size: 1.25rem;
+  }
+
+  .email {
+    font-size: 0.875rem;
+    text-align: center;
+    margin-left: 4rem;
+  }
+
+  .divider {
+    height: 1px;
+  }
+
+  .user-sidebar-link, .admin-sidebar-link {
+    padding: 0.5rem;
+  }
+
+  .favourites, .order-history, .settings, 
+  .add-book, .all-orders {
+    font-size: 0.875rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .favourites:hover, .order-history:hover, .settings:hover,
+  .add-book:hover, .all-orders:hover {
+    background-color: #33448d;
+  }
+
+  .log-out {
+    font-size: 0.875rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+  .log-out:hover {
+    background-color: #ffffff;
+    color: #18181b;
+  }
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .sidebar {
+    width: 20vw;
+    padding: 1rem;
+  }
+
+  .sidebar-profile img {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .username {
+    font-size: 1.5rem;
+  }
+
+  .email {
+    font-size: 1rem;
+    text-align: center;
+    margin-left: 2rem;
+  }
+
+  .divider {
+    height: 2px;
+  }
+
+  .favourites, .order-history, .settings, 
+  .add-book, .all-orders {
+    font-size: 1rem;
+  }
+
+  .favourites:hover, .order-history:hover, .settings:hover,
+  .add-book:hover, .all-orders:hover {
+    background-color: #33448d;
+  }
+
+  .log-out {
+    font-size: 1rem;
+  }
+  .log-out:hover {
+    background-color: #ffffff;
+    color: #18181b;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  .sidebar {
+    width: 17vw;
+    padding: 1.5rem;
+  }
+
+  .sidebar-profile img {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .username {
+    font-size: 1.75rem;
+  }
+
+  .email {
+    font-size: 1.25rem;
+  }
+
+  .favourites, .order-history, .settings, 
+  .add-book, .all-orders {
+    font-size: 1.1rem;
+  }
+
+  .favourites:hover, .order-history:hover, .settings:hover,
+  .add-book:hover, .all-orders:hover {
+    background-color: #33448d;
+  }
+
+  .log-out {
+    font-size: 1.1rem;
+  }
+  .log-out:hover {
+    background-color: #ffffff;
+    color: #18181b;
+  }
+}

@@ -1,0 +1,215 @@
+.ViewBookDetails {
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  max-width: 1200px; 
+  margin-right: 4rem;
+  margin-bottom: 4rem;
+}
+
+.imageSection {
+  position: relative;
+  width: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.Book {
+  border: 4px solid ;
+  border-radius: 16px;
+  display: flex;
+  height: auto; 
+  width: 100vh;
+  max-width: 500px; 
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.Book img {
+  width: 100%;
+  height: auto; 
+  border-radius: 16px; 
+}
+
+.buttons {
+  display: flex;
+  gap: 0.5rem; 
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.Heart, .Cart, .Edit-book, .delete-book {
+  background-color: white;
+  border-radius: 50%;
+  font-size: 1.25rem; 
+  padding: 0.5rem; 
+  border: 2px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.Heart {
+  color: red;
+}
+
+.Cart {
+  color: rgb(20, 20, 228);
+}
+
+.Edit-book, .delete-book {
+  background-color: white;
+  border-radius: 50%;
+  font-size: 1.25rem; 
+  padding: 0.5rem; 
+  border: 2px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.delete-book:hover {
+  background-color: rgb(231, 56, 50);
+}
+
+.Edit-book:hover {
+  background-color: rgb(14, 165, 235);
+}
+
+.bookDetails {
+  width: 50%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  text-align: center; 
+}
+
+.Title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0; 
+}
+
+.Author, .Desc, .Language, .Price {
+  color: #a1a1aa;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.Desc {
+  color: #e6e6f0;
+  font-size: 1.25rem;
+  width: 80%;
+}
+
+.Language {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+.language-icon {
+  margin-right: 0.5rem;
+}
+
+.Price {
+  color: #f4f4f5;
+  font-size: 1.875rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .ViewBookDetails {
+    padding: 2rem 1rem;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .imageSection, .bookDetails {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+  }
+
+  .Book {
+    width: 90%;
+    max-width: none; 
+  }
+
+  .buttons {
+    flex-direction: row;
+  }
+
+  .bookDetails {
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .ViewBookDetails {
+    padding: 2rem;
+  }
+
+  .content {
+    flex-direction: row;
+  }
+
+  .Book {
+    width: 65%;
+  }
+
+  .buttons {
+    flex-direction: row;
+  }
+
+  .bookDetails {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .ViewBookDetails {
+    padding: 3rem;
+  }
+
+  .content {
+    flex-direction: row;
+  }
+
+  .Book {
+    width: 50%;
+    max-width: 600px; 
+  }
+
+  .buttons {
+    position: absolute;
+    bottom: -3rem; 
+    right: 50%;
+    transform: translateX(50%);
+    gap: 0.5rem; 
+  }
+}

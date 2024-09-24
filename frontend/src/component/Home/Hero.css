@@ -1,0 +1,172 @@
+.Hero {
+  background-color: #111827;
+  color: #ffffff;
+  height: 75vh;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; 
+}
+
+.heading {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center; 
+  margin-top: 2rem;
+}
+
+.heading h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  color: #fefcbf;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.heading h1:hover {
+  color: #30afb8;
+}
+
+p {
+  margin-top: 0.1rem;
+  font-size: 1.5rem;
+  color: #d4d4d8;
+  width: 90%;
+  text-align: center; 
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-start; 
+  width: 100%; 
+  margin-top: 0.5rem; 
+  margin-bottom: 1rem; 
+  padding: 0 2rem; 
+}
+
+.discover-button {
+  color: rgb(254, 249, 195);
+  font-size: 1.25rem; 
+  font-weight: 600;
+  border: 1px solid #797774; 
+  padding: 0.5rem 1rem; 
+  border-radius: 50px;
+  background: none;
+  display: inline-flex; 
+  margin-bottom: 0.1rem;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; 
+}
+
+.discover-button:hover {
+  background-color: #30afb8; 
+  color: #111827; 
+  border-color: #30afb8; 
+}
+
+.discover-button:active {
+  background-color: #1d7176; 
+  color: #ffffff; 
+  border-color: #1d7176; 
+}
+
+.img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img img {
+  max-width: 100vh;
+  height: auto;
+  object-fit: contain; 
+  margin-right: 7rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .Hero {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .heading {
+    text-align: left;
+    width: 50%;
+  }
+
+  .heading h1 {
+    font-size: 3.75rem;
+    width: 75%;
+  }
+
+  p {
+    text-align: left;
+    width: 60%;
+  }
+
+  .button-container {
+    margin-left: 0; 
+    margin-right: 0;
+    padding: 0; 
+  }
+
+  .img {
+    width: 40%;
+  }
+
+  .discover-button:hover {
+    background-color: #30afb8;
+    color: #111827;
+    border-color: #30afb8;
+  }
+
+  .discover-button:active {
+    background-color: #1d7176;
+    color: #ffffff;
+    border-color: #1d7176;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .button-container {
+    justify-content: center; 
+    padding: 0; 
+  }
+
+  .discover-button:hover {
+    background-color: #30afb8;
+    color: #111827;
+    border-color: #30afb8;
+  }
+
+  .discover-button:active {
+    background-color: #1d7176;
+    color: #ffffff;
+    border-color: #1d7176;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .img {
+    width: 80%;
+  }
+
+  .discover-button:hover {
+    background-color: #30afb8;
+    color: #111827;
+    border-color: #30afb8;
+  }
+
+  .discover-button:active {
+    background-color: #1d7176;
+    color: #ffffff;
+    border-color: #1d7176;
+  }
+}

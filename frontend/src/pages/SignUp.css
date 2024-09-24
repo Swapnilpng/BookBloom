@@ -1,0 +1,134 @@
+
+body, html {
+  height: 100%;
+  margin: 0;
+  background-color: rgb(220, 238, 238);
+}
+
+
+.signup-background {
+  background-image: url("../assets/modern-bookstore.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-container {
+  max-width: 400px;
+  width: 80%;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(10px); 
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  color: #e4e4e7;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+.signup-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+.signup-form .form-group {
+  margin-bottom: 15px;
+}
+
+.signup-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.signup-form input {
+  width: 100%; 
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #e4e4e7;
+  border-radius: 0.25rem;
+  background-color: #18181b;
+  color: #e4e4e7;
+  box-sizing: border-box;
+}
+
+.signup-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: #3b82f6;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 15px;
+}
+
+.signup-button:hover {
+  background-color: #2563eb;
+}
+
+.separator {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #dce1eb;
+  margin: 10px 0;
+}
+
+.login-link {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  color: #ffffff;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+.login-link:hover {
+  color: #2e4a81;
+}
+
+@media (max-width: 768px) {
+  .signup-container {
+    padding: 15px;
+    max-width: 90%;
+  }
+
+  .signup-title {
+    font-size: 1.25rem;
+  }
+
+  .signup-form input {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .signup-container {
+    padding: 10px;
+  }
+
+  .signup-title {
+    font-size: 1rem;
+  }
+
+  .signup-form input {
+    font-size: 0.8rem;
+  }
+
+  .separator {
+    font-size: 1rem;
+  }
+
+  .login-link {
+    font-size: 0.9rem;
+  }
+}

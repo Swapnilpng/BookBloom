@@ -1,0 +1,134 @@
+
+body, html {
+  height: 100%;
+  margin: 0; 
+  background-color: rgb(220, 238, 238);
+}
+
+
+.background {
+  background-image: url("../assets/modern-bookstore.jpg");
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.login-container {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(10px); 
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  color: #e4e4e7;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.login-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.login-form .form-group {
+  margin-bottom: 15px;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #e4e4e7;
+  border-radius: 0.25rem;
+  background-color: rgba(24, 24, 27, 0.8); 
+  color: #e4e4e7;
+  box-sizing: border-box;
+}
+
+.LogIn-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: #3b82f6;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 15px; 
+}
+
+.LogIn-button:hover {
+  background-color: #2563eb;
+}
+
+.separator {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #dce1eb;
+  margin: 10px 0;
+}
+
+.SignUp-link {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  color: #ffffff;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin: 3rem;
+}
+
+.SignUp-link:hover {
+  color: #2e4a81;
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    padding: 15px; 
+    max-width: 90%; 
+  }
+
+  .login-title {
+    font-size: 1.25rem; 
+  }
+
+  .login-form input {
+    font-size: 0.9rem; 
+  }
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    padding: 10px; 
+  }
+
+  .login-title {
+    font-size: 1rem; 
+  }
+
+  .login-form input {
+    font-size: 0.8rem; 
+  }
+
+  .separator {
+    font-size: 1rem; 
+  }
+
+  .SignUp-link {
+    font-size: 0.9rem; 
+  }
+}
